@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+  /* design tokens – light */
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: #dbe8ea;
+  --card-shadow: rgb(26 52 66 / 6%);
+  --text-heading: #123340;
+  --text-primary: #132f3e;
+  --text-secondary: #55717d;
+  --text-label: #345361;
+  --text-muted: #64808f;
+  --input-bg: #fcfefe;
+  --input-border: #c2d5dc;
+  --input-text: #173746;
+  --focus-color: #2b7f6d;
+  --focus-ring: rgb(43 127 109 / 16%);
+  --btn-ghost-bg: #f4f9fb;
+  --btn-ghost-border: #c7d8df;
+  --btn-ghost-text: #244050;
+  --btn-ghost-hover: #e9f3f7;
+  --list-bg: #fff;
+  --list-border: #dde8ec;
+  --empty-bg: #f9fcfd;
+  --badge-bg: #e8f6ee;
+  --badge-text: #1c6b49;
+  --badge-late-bg: #fff2e4;
+  --badge-late-text: #925809;
+  --grid-line: rgb(255 255 255 / 36%);
+
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: radial-gradient(circle at 8% 8%, #d8eee5 0%, #eff6fb 38%, #f7fbfa 100%);
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='dark'] {
+  /* design tokens – dark */
+  --card-bg: rgb(14 24 32 / 94%);
+  --card-border: #1c3040;
+  --card-shadow: rgb(0 0 0 / 28%);
+  --text-heading: #d0eaf5;
+  --text-primary: #b8d8e8;
+  --text-secondary: #6d9db3;
+  --text-label: #7bafc4;
+  --text-muted: #4e7a8c;
+  --input-bg: #0b1920;
+  --input-border: #1a3040;
+  --input-text: #c0e0ed;
+  --focus-color: #3eb89e;
+  --focus-ring: rgb(62 184 158 / 18%);
+  --btn-ghost-bg: #0d2030;
+  --btn-ghost-border: #1b3448;
+  --btn-ghost-text: #b0d8ea;
+  --btn-ghost-hover: #11283a;
+  --list-bg: #0c1c28;
+  --list-border: #192d3c;
+  --empty-bg: #0a1820;
+  --badge-bg: #0a2e1a;
+  --badge-text: #3ec878;
+  --badge-late-bg: #281802;
+  --badge-late-text: #e8a040;
+  --grid-line: rgb(255 255 255 / 4%);
+
+  color: var(--text-primary);
+  background: radial-gradient(circle at 8% 8%, #091610 0%, #091824 38%, #091917 100%);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', Georgia, serif;
+}
