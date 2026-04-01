@@ -38,7 +38,7 @@ export function VolunteerManager({
   return (
     <section className="card">
       <header className="section-header">
-        <h2>Voluntarios</h2>
+        <h2>Voluntários</h2>
         <p>Cadastre as pessoas que podem participar do fechamento.</p>
       </header>
 
@@ -62,7 +62,7 @@ export function VolunteerManager({
         </label>
 
         <label>
-          Ministerio <span className="optional-label"></span>
+          Ministério <span className="optional-label"></span>
           <input
             value={ministry}
             onChange={(event) => setMinistry(event.target.value)}
@@ -71,13 +71,13 @@ export function VolunteerManager({
         </label>
 
         <button type="submit" className="primary-btn">
-          Adicionar voluntario
+          Adicionar voluntário
         </button>
       </form>
 
       <ul className="volunteer-list">
         {volunteers.length === 0 ? (
-          <li className="empty-state">Nenhum voluntario cadastrado.</li>
+          <li className="empty-state">Nenhum voluntário cadastrado.</li>
         ) : (
           volunteers.map((volunteer) => (
             <li key={volunteer.id}>

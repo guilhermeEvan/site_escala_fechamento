@@ -102,14 +102,14 @@ function App() {
     <main className="layout">
       <header className="hero">
         <div className="hero-top">
-          <p className="eyebrow">Igreja • Operacao de fechamento</p>
+          <p className="eyebrow">Igreja • Operação de fechamento</p>
           <button type="button" className="theme-toggle" onClick={toggleTheme}>
             {theme === 'light' ? '🌙 Modo noturno' : '☀️ Modo claro'}
           </button>
         </div>
         <h1>Escala de Fechamento</h1>
         <p>
-          Cadastre voluntarios e gere principal + substituto aleatorios por data.
+          Cadastre voluntários e gere principal + substituto aleatórios por data.
         </p>
 
         <div className="kpi-grid">

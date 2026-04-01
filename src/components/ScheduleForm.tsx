@@ -77,7 +77,7 @@ export function ScheduleForm({ volunteers, onCreateSchedule }: ScheduleFormProps
         </fieldset>
 
         <button type="submit" className="primary-btn" disabled={volunteers.length === 0}>
-          Gerar escala aleatoria
+          Gerar escala aleatória
         </button>
       </form>
     </section>
